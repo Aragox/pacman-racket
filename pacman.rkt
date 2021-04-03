@@ -246,7 +246,7 @@
 255 0 -1 -1 4 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 1.0 1.0 1.0 1.0 1.0 1.0 0 0 0 0 0 0
--1 -1           0 6467 0 29 3 12 #"#lang racket"
+-1 -1           0 6676 0 29 3 12 #"#lang racket"
 0 0 25 29 1 #"\n"
 0 0 25 3 1 #"("
 0 0 15 3 7 #"require"
@@ -2285,8 +2285,7 @@
 0 0 25 3 1 #"("
 0 0 15 3 6 #"define"
 0 0 25 3 1 #" "
-0 0 14 3 9 #"balls-cou"
-0 0 14 3 2 #"nt"
+0 0 14 3 11 #"balls-count"
 0 0 25 29 1 #"\n"
 0 0 25 3 2 #"  "
 0 0 22 3 1 #"0"
@@ -2308,6 +2307,49 @@
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
+0 0 17 3 61
+#"; Contador del tiempo que tarda en moverse al inicio de nivel"
+0 0 25 29 1 #"\n"
+0 0 25 3 1 #"("
+0 0 15 3 6 #"define"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 29 1 #"\n"
+0 0 25 3 2 #"  "
+0 0 22 3 1 #"0"
+0 0 25 29 1 #"\n"
+0 0 25 3 1 #")"
+0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 17 3 61
+#"; Contador del tiempo que tarda en moverse al inicio de nivel"
+0 0 25 29 1 #"\n"
+0 0 25 3 1 #"("
+0 0 15 3 6 #"define"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost2-count"
+0 0 25 29 1 #"\n"
+0 0 25 3 2 #"  "
+0 0 22 3 1 #"0"
+0 0 25 29 1 #"\n"
+0 0 25 3 1 #")"
+0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 17 3 71
+(66
+ #"; Tiempo m\303\241ximo que tardan los fantasmas en moverse al inicio"
+ #" de nivel"
+) 0 0 25 29 1 #"\n"
+0 0 25 3 1 #"("
+0 0 15 3 6 #"define"
+0 0 25 3 1 #" "
+0 0 14 3 15 #"max-stop-ghosts"
+0 0 25 29 1 #"\n"
+0 0 25 3 2 #"  "
+0 0 22 3 2 #"27"
+0 0 25 29 1 #"\n"
+0 0 25 3 1 #")"
+0 0 25 29 1 #"\n"
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 17 3 99 5 0 0 25 29 1 #"\n"
 0 0 17 3 53 #";FUNCIONES PARA LEER ARCHIVO E INICIALIZAR LABERINTO "
@@ -2316,7 +2358,7 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 100
-(66
+(67
  #";Funci\303\263n que inicializa las posiciones con #f en el laberinto"
  #". Retorna una lista con las posiciones"
 ) 0 0 25 29 1 #"\n"
@@ -2393,7 +2435,7 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 168
-(67
+(68
  #"; Funci\303\263n que llena la estructura del laberinto con las posic"
  #"iones v\303\241lidas correspondientes (#t), incluye adem\303\241s la"
  #"s bolitas en las posiciones v\303\241lidas, y las cuenta"
@@ -2616,7 +2658,7 @@
 0 0 22 3 2 #"#t"
 0 0 25 3 2 #") "
 0 0 17 3 86
-(68
+(69
  #";Chequear si elem tiene el primer bit encendido (tiene casilla conec"
  #"tada a la derecha)"
 ) 0 0 25 29 1 #"\n"
@@ -2733,7 +2775,7 @@
 0 0 22 3 2 #"#t"
 0 0 25 3 2 #") "
 0 0 17 3 80
-(69
+(70
  #";Chequear si elem tiene el segundo bit encendido (tiene casilla cone"
  #"ctada abajo)"
 ) 0 0 25 29 1 #"\n"
@@ -2872,7 +2914,7 @@
 0 0 14 3 8 #"rows-tot"
 0 0 25 3 3 #")) "
 0 0 17 3 135
-(70
+(71
  #"; Si j alcanza la cantidad de columnas obtenidas del archivo, aument"
  #"ar i en 1 y resetear j para que recorra columnas de siguiente fila "
 ) 0 0 25 29 1 #"\n"
@@ -3007,8 +3049,7 @@
 0 0 17 3 1 #" "
 0 0 17 3 2 #"#t"
 0 0 17 3 1 #" "
-0 0 17 3 2 #"en"
-0 0 17 3 15 #" caso contrario"
+0 0 17 3 17 #"en caso contrario"
 0 0 25 29 1 #"\n"
 0 0 25 3 1 #"("
 0 0 15 3 6 #"define"
@@ -3018,8 +3059,7 @@
 0 0 25 29 1 #"\n"
 0 0 17 3 4 #";  ("
 0 0 17 3 3 #"for"
-0 0 17 3 3 #" (["
-0 0 17 3 14 #"elem mazepath]"
+0 0 17 3 17 #" ([elem mazepath]"
 0 0 25 29 1 #"\n"
 0 0 17 3 9 #";        "
 0 0 17 3 7 #"#:break"
@@ -3027,8 +3067,7 @@
 0 0 17 3 6 #"equal?"
 0 0 17 3 2 #" ("
 0 0 17 3 6 #"fourth"
-0 0 17 3 1 #" "
-0 0 17 3 9 #"elem) #f)"
+0 0 17 3 10 #" elem) #f)"
 0 0 25 29 1 #"\n"
 0 0 17 3 10 #";       ) "
 0 0 25 29 1 #"\n"
@@ -3076,7 +3115,7 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 73
-(71
+(72
  #"; Funci\303\263n que chequea si el mundo debe terminar (el de la ani"
  #"maci\303\263n :))"
 ) 0 0 25 29 1 #"\n"
@@ -3112,8 +3151,7 @@
 0 0 17 3 2 #"if"
 0 0 17 3 2 #" ("
 0 0 17 3 6 #"equal?"
-0 0 17 3 2 #" ("
-0 0 17 3 15 #"won-level?) #t)"
+0 0 17 3 17 #" (won-level?) #t)"
 0 0 25 29 1 #"\n"
 0 0 25 3 6 #"      "
 0 0 22 3 2 #"#t"
@@ -3134,12 +3172,12 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 113
-(72
+(73
  #"; Funci\303\263n que dibuja la estructura del laberinto definiendo l"
  #"a escena. Asume que mazepath ya est\303\241 inicializado."
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 86
-(73
+(74
  #"; Adem\303\241s guarda los elementos de las esquinas del laberinto e"
  #"n una lista inicializada"
 ) 0 0 25 29 1 #"\n"
@@ -3197,11 +3235,10 @@
 0 0 25 3 2 #") "
 0 0 19 3 7 #"\"solid\""
 0 0 25 3 1 #" "
-0 0 19 3 1 #"\""
-0 0 19 3 9 #"Dark Red\""
+0 0 19 3 10 #"\"Dark Red\""
 0 0 25 3 2 #"))"
 0 0 17 3 70
-(74
+(75
  #"; Actualizar el tama\303\261o de la escena con las dimensiones del l"
  #"aberinto"
 ) 0 0 25 29 1 #"\n"
@@ -3221,7 +3258,7 @@
 0 0 15 3 4 #"cond"
 0 0 25 3 1 #" "
 0 0 17 3 98
-(75
+(76
  #";Chequear si elem tiene asignado #t en las coordenadas i,j guardadas"
  #". Si hay #t se agrega el suelo"
 ) 0 0 25 29 1 #"\n"
@@ -3450,19 +3487,18 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 107
-(76
+(77
  #"; Funci\303\263n que retorna una lista con las posibles direcciones "
  #"a partir de la posici\303\263n actual del personaje"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 103
-(77
+(78
  #"; Recibe una posici\303\263n '(i,j) llamada lst y retorna una lista "
  #"de strings con las direcciones posibles \""
 ) 0 0 17 3 5 #"right"
 0 0 17 3 3 #"\",\""
 0 0 17 3 4 #"left"
-0 0 17 3 3 #"\",\""
-0 0 17 3 10 #"up\",\"down\""
+0 0 17 3 13 #"\",\"up\",\"down\""
 0 0 25 29 1 #"\n"
 0 0 25 3 1 #"("
 0 0 15 3 6 #"define"
@@ -3738,12 +3774,12 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 106
-(78
+(79
  #"; Funci\303\263n que retorna una lista con las posibles posiciones a"
  #" partir de la posici\303\263n actual del personaje"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 76
-(79
+(80
  #"; Recibe una posici\303\263n '(i,j) llamada lst y retorna una lista "
  #"de posiciones "
 ) 0 0 25 29 1 #"\n"
@@ -4061,12 +4097,12 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 123
-(80
+(81
  #"; Funci\303\263n que retorna una lista con las posibles posiciones a"
  #" partir de la posici\303\263n actual y en base a la ruta recorrida "
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 113
-(81
+(82
  #"; Recibe una ruta '((i,j) (i,j) "
  #"...) llamada route y una posici\303\263n llamada lst y retorna una l"
  #"ista de posiciones "
@@ -4467,7 +4503,7 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 107
-(82
+(83
  #"; Funci\303\263n que retorna una \303\272nica direcci\303\263n en ba"
  #"se a la posici\303\263n original y la nueva posici\303\263n (vecinas"
  #")"
@@ -4579,7 +4615,7 @@
 #"; Funci\303\263n que actualiza la posici\303\263n del personaje"
 0 0 25 29 1 #"\n"
 0 0 17 3 75
-(83
+(84
  #"; Recibe la posici\303\263n del personaje en la variable 'lst', la d"
  #"irecci\303\263n 'd'"
 ) 0 0 25 29 1 #"\n"
@@ -4612,8 +4648,7 @@
 0 0 17 3 3 #"que"
 0 0 17 3 1 #" "
 0 0 17 3 2 #"se"
-0 0 17 3 1 #" "
-0 0 17 3 30 #"desea actualizar la posici\303\263n "
+0 0 17 3 31 #" desea actualizar la posici\303\263n "
 0 0 25 29 1 #"\n"
 0 0 25 3 1 #"("
 0 0 15 3 6 #"define"
@@ -4953,12 +4988,12 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 73
-(84
+(85
  #"; Funci\303\263n que calcula la distancia de manhattan : num num num"
  #" num -> num"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 76
-(85
+(86
  #"; Obtenida de: https://github.com/simonista/racket-util/blob/master/"
  #"util.rkt"
 ) 0 0 25 29 1 #"\n"
@@ -4998,17 +5033,17 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 76
-(86
+(87
  #"; Funci\303\263n que elimina los ciclos removiendo los elementos que"
  #" los contienen"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 78
-(87
+(88
  #"; Recibe una cola del branch&bound, una lista vac\303\255a y un \303"
  #"\255ndice igual a cero"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 75
-(88
+(89
  #"; Retorna una cola del branch&bound sin los elementos que conten\303"
  #"\255an ciclos"
 ) 0 0 25 29 1 #"\n"
@@ -5107,12 +5142,12 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 106
-(89
+(90
  #"; Funci\303\263n que ordena una lista de forma ascendente tomando co"
  #"mo llave la operaci\303\263n car de cada elemento."
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 133
-(90
+(91
  #"; Utiliza la distancia de manhattan m\303\241s el valor acumulado en"
  #" cada ruta para la comparaci\303"
  #"\263n (con respecto a la posici\303\263n de pacman)"
@@ -5121,7 +5156,7 @@
 #"; Retorna una lista de elementos ordenados ascendentemente"
 0 0 25 29 1 #"\n"
 0 0 17 3 111
-(91
+(92
  #"; Obtenida de: https://stackoverflow.com/questions/50182247/sorting-"
  #"a-list-by-the-car-of-each-element-in-racket"
 ) 0 0 25 29 1 #"\n"
@@ -5230,8 +5265,7 @@
 0 0 25 29 1 #"\n"
 0 0 17 3 35 #"; Funci\303\263n auxiliar del algoritmo \""
 0 0 17 3 6 #"Branch"
-0 0 17 3 1 #" "
-0 0 17 3 14 #"and Bound: A*\""
+0 0 17 3 15 #" and Bound: A*\""
 0 0 25 29 1 #"\n"
 0 0 25 3 1 #"("
 0 0 15 3 6 #"define"
@@ -5288,8 +5322,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 9 #"encontr\303\263"
 0 0 19 3 1 #" "
-0 0 19 3 2 #"la"
-0 0 19 3 21 #" ruta al objetivo!!!\""
+0 0 19 3 23 #"la ruta al objetivo!!!\""
 0 0 25 3 3 #")] "
 0 0 17 3 25 #"; Si la cola est\303\241 vac\303\255a"
 0 0 25 29 1 #"\n"
@@ -5342,17 +5375,10 @@
 0 0 19 3 1 #" "
 0 0 19 3 6 #"est\303\241n"
 0 0 19 3 1 #" "
-0 0 19 3 2 #"en"
-0 0 19 3 23 #" la misma posici\303\263n...\""
+0 0 19 3 25 #"en la misma posici\303\263n...\""
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 3 9 #"        ("
-0 0 14 3 4 #"set!"
-0 0 25 3 1 #" "
-0 0 14 3 13 #"pacman-alive?"
-0 0 25 3 1 #" "
-0 0 22 3 2 #"#f"
-0 0 25 3 3 #") ("
 0 0 14 3 7 #"get-dir"
 0 0 25 3 2 #" ("
 0 0 14 3 4 #"list"
@@ -5368,7 +5394,7 @@
 0 0 22 3 1 #"0"
 0 0 25 3 4 #"))] "
 0 0 17 3 78
-(92
+(93
  #";(first (second (first queue)))] ; El objetivo muere, el personaje n"
  #"o se mueve"
 ) 0 0 25 29 1 #"\n"
@@ -5389,21 +5415,10 @@
 0 0 19 3 2 #"ya"
 0 0 19 3 1 #" "
 0 0 19 3 8 #"alcanz\303\263"
-0 0 19 3 1 #" "
-0 0 19 3 16 #"al personaje :(\""
+0 0 19 3 17 #" al personaje :(\""
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 3 9 #"        ("
-0 0 14 3 4 #"set!"
-0 0 25 3 1 #" "
-0 0 14 3 11 #"score-value"
-0 0 25 3 2 #" ("
-0 0 14 3 1 #"+"
-0 0 25 3 1 #" "
-0 0 14 3 11 #"score-value"
-0 0 25 3 1 #" "
-0 0 22 3 3 #"100"
-0 0 25 3 4 #")) ("
 0 0 14 3 7 #"get-dir"
 0 0 25 3 2 #" ("
 0 0 14 3 4 #"list"
@@ -5453,7 +5468,7 @@
 0 0 14 3 6 #"target"
 0 0 25 3 3 #")) "
 0 0 17 3 64
-(93
+(94
  #"; El personaje alcanza al objet"
  #"ivo al avanzar una posici\303\263n m\303\241s"
 ) 0 0 25 29 1 #"\n"
@@ -5473,12 +5488,6 @@
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 3 9 #"        ("
-0 0 14 3 4 #"set!"
-0 0 25 3 1 #" "
-0 0 14 3 13 #"pacman-alive?"
-0 0 25 3 1 #" "
-0 0 22 3 2 #"#f"
-0 0 25 3 3 #") ("
 0 0 14 3 7 #"get-dir"
 0 0 25 3 2 #" ("
 0 0 14 3 5 #"first"
@@ -5532,8 +5541,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 1 #"a"
 0 0 19 3 1 #" "
-0 0 19 3 1 #"1"
-0 0 19 3 28 #" posici\303\263n del personaje...\""
+0 0 19 3 29 #"1 posici\303\263n del personaje...\""
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 3 9 #"        ("
@@ -5556,7 +5564,7 @@
 0 0 14 3 5 #"queue"
 0 0 25 3 6 #"))))] "
 0 0 17 3 66
-(94
+(95
  #"; El personaje huye del objetivo gracias a la direcci\303\263n retor"
  #"nada"
 ) 0 0 25 29 1 #"\n"
@@ -5626,7 +5634,7 @@
 0 0 14 3 5 #"queue"
 0 0 25 3 6 #"))))] "
 0 0 17 3 73
-(95
+(96
  #"; El personaje avanza hacia el objetivo gracias a la direcci\303\263"
  #"n retornada"
 ) 0 0 25 29 1 #"\n"
@@ -5691,7 +5699,7 @@
 0 0 25 3 1 #" "
 0 0 14 3 5 #"queue"
 0 0 25 3 6 #"))))] "
-0 0 17 3 66 94 0 0 25 29 1 #"\n"
+0 0 17 3 66 95 0 0 25 29 1 #"\n"
 0 0 25 3 5 #"    ["
 0 0 14 3 4 #"else"
 0 0 25 29 1 #"\n"
@@ -5830,7 +5838,7 @@
 0 0 14 3 8 #"children"
 0 0 25 3 3 #"]) "
 0 0 17 3 101
-(96
+(97
  #"; Agregar a cada nodo hijo a una ruta separada junto con su peso, y "
  #"agregar cada ruta nueva a la cola"
 ) 0 0 25 29 1 #"\n"
@@ -5905,7 +5913,7 @@
 0 0 14 3 1 #"e"
 0 0 25 3 6 #"))))) "
 0 0 17 3 113
-(97
+(98
  #"; Elimina las rutas duplicadas que terminan con mismo destino, conse"
  #"rva las primeras apariciones correspondientes"
 ) 0 0 25 29 1 #"\n"
@@ -5955,13 +5963,12 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 85
-(98
+(99
  #"; Funci\303\263n que retorna la direcci\303\263n escogida para el pe"
  #"rsonaje usando el algoritmo \""
 ) 0 0 17 3 6 #"Branch"
 0 0 17 3 1 #" "
-0 0 17 3 3 #"and"
-0 0 17 3 12 #" Bound: A*\"."
+0 0 17 3 15 #"and Bound: A*\"."
 0 0 25 29 1 #"\n"
 0 0 17 3 8 #"; Emplea"
 0 0 17 3 1 #" "
@@ -5972,19 +5979,18 @@
 0 0 17 3 1 #" "
 0 0 17 3 4 #"como"
 0 0 17 3 1 #" "
-0 0 17 3 2 #"si"
-0 0 17 3 85
-(99
- #" fuera la distancia del cuervo. Adem\303\241s tiene 2 modos distinto"
- #"s: 'chase' y 'run away'"
+0 0 17 3 87
+(100
+ #"si fuera la distancia del cuervo. Adem\303\241s tiene 2 modos distin"
+ #"tos: 'chase' y 'run away'"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 124
-(100
+(101
  #"; donde el modo 'chase' utiliza al algoritmo A* original para perseg"
  #"uir al objetivo, mientras que el modo 'run away' utiliza"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 125
-(101
+(102
  #"; una versi\303\263n modificada por el estudiante Ricardo V\303\255q"
  #"uez Mora del algoritmo A* para que el personaje escape del objetivo."
  #" "
@@ -6051,7 +6057,7 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 112
-(102
+(103
  #"; Elige el sprite de caminar inferior para los fantasmas dependiendo"
  #" de si \"integer\" es 1 \303\263 cualquier n\303\272mero y"
 ) 0 0 25 29 1 #"\n"
@@ -6067,8 +6073,7 @@
 0 0 17 3 1 #" "
 0 0 17 3 2 #"la"
 0 0 17 3 1 #" "
-0 0 17 3 10 #"direcci\303\263n"
-0 0 17 3 30 #" dependiendo del \303\255ndice dir. "
+0 0 17 3 40 #"direcci\303\263n dependiendo del \303\255ndice dir. "
 0 0 25 29 1 #"\n"
 0 0 17 3 61
 #"; Recibe una lista (lst) y entero1 (integer) y entero2 (dir)."
@@ -6137,12 +6142,12 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 123
-(103
+(104
  #"; Elige el \303\255ndice del sprite de caminar superior para fantasm"
  #"as dependiendo de la direcci\303\263n a la que se mueve el fantasma"
 ) 0 0 25 29 1 #"\n"
 0 0 17 3 137
-(104
+(105
  #"; Recibe un entero 'selectghost' el cual actualiza el \303\255ndice "
  #"del fantasma correspondiente y la direcci\303\263n 'new-dir' la cual"
  #" es un string"
@@ -6173,7 +6178,7 @@
 0 0 15 3 4 #"cond"
 0 0 25 3 1 #" "
 0 0 17 3 77
-(105
+(106
  #"; Actualiza el \303\255ndice del sprite de un fantasma dependiendo d"
  #"e la direcci\303\263n"
 ) 0 0 25 29 1 #"\n"
@@ -6279,7 +6284,7 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 91
-(106
+(107
  #"; Funci\303\263n de gameover. Muestra el texto GAME OVER en la escen"
  #"a cuando ya el juego termin\303\263"
 ) 0 0 25 29 1 #"\n"
@@ -6344,8 +6349,7 @@
 0 0 25 3 1 #" "
 0 0 14 3 9 #"lava-base"
 0 0 25 3 3 #")) "
-0 0 14 3 4 #"colu"
-0 0 14 3 7 #"mns-tot"
+0 0 14 3 11 #"columns-tot"
 0 0 25 3 2 #") "
 0 0 22 3 1 #"2"
 0 0 25 3 3 #") ("
@@ -6486,7 +6490,7 @@
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 92
-(107
+(108
  #"; Funci\303\263n que muestra el evento que debe ocurrir al terminar "
  #"el mundo (el de la animaci\303\263n)"
 ) 0 0 25 29 1 #"\n"
@@ -6607,12 +6611,11 @@
 0 0 25 29 1 #"\n"
 0 0 17 3 48 #"; Creaci\303\263n de una \"escena\" del mundo de pacman."
 0 0 25 29 1 #"\n"
-0 0 17 3 81
-(108
+0 0 17 3 128
+(109
  #"; Recibe un entero 'time', el cual permite hacer las animaciones al "
- #"ir aumentando"
-) 0 0 17 3 47 #" a cierta frecuencia de llamada a esta funci\303\263n"
-0 0 25 29 1 #"\n"
+ #"ir aumentando a cierta frecuencia de llamada a esta funci\303\263n"
+) 0 0 25 29 1 #"\n"
 0 0 25 3 1 #"("
 0 0 15 3 6 #"define"
 0 0 25 3 2 #" ("
@@ -6653,8 +6656,7 @@
 0 0 25 3 1 #" "
 0 0 19 3 7 #"\"solid\""
 0 0 25 3 1 #" "
-0 0 19 3 1 #"\""
-0 0 19 3 9 #"Dark Red\""
+0 0 19 3 10 #"\"Dark Red\""
 0 0 25 3 1 #")"
 0 0 25 29 1 #"\n"
 0 0 25 3 3 #"  )"
@@ -6665,7 +6667,7 @@
 0 0 15 3 4 #"cond"
 0 0 25 3 1 #" "
 0 0 17 3 82
-(109
+(110
  #"; Colocar los personajes en sus posiciones de inicio cuando pacman p"
  #"ierde una vida"
 ) 0 0 25 29 1 #"\n"
@@ -6877,8 +6879,7 @@
 0 0 25 3 4 #")) ("
 0 0 14 3 7 #"println"
 0 0 25 3 1 #" "
-0 0 19 3 1 #"\""
-0 0 19 3 23 #"fantasmas vulnerables!\""
+0 0 19 3 24 #"\"fantasmas vulnerables!\""
 0 0 25 3 3 #") ("
 0 0 14 3 4 #"set!"
 0 0 25 3 1 #" "
@@ -7052,7 +7053,7 @@
 0 0 25 29 1 #"\n"
 0 0 25 3 2 #"  "
 0 0 17 3 101
-(110
+(111
  #";(change-pos pacman-pos 0 new-dir) ; Actualiza la posici\303\263n de"
  #" pacman con base en la direcci\303\263n nueva"
 ) 0 0 25 29 1 #"\n"
@@ -7116,7 +7117,7 @@
 0 0 15 3 4 #"cond"
 0 0 25 3 1 #" "
 0 0 17 3 72
-(111
+(112
  #"; Actualiza el \303\241ngulo del sprite de pacman dependiendo de la "
  #"direcci\303\263n"
 ) 0 0 25 29 1 #"\n"
@@ -7186,7 +7187,7 @@
 0 0 15 3 4 #"cond"
 0 0 25 3 1 #" "
 0 0 17 3 138
-(112
+(113
  #"; Actualizar contador de vulnerabilidad, y si super\303\263 el l\303"
  #"\255mite, hacer que los fantasmas vuelvan al estado normal (quitar v"
  #"ulnerabilidad)"
@@ -7210,8 +7211,7 @@
 0 0 25 3 1 #" "
 0 0 14 3 17 #"vulnerable-ghosts"
 0 0 25 3 1 #" "
-0 0 22 3 1 #"#"
-0 0 22 3 1 #"f"
+0 0 22 3 2 #"#f"
 0 0 25 3 2 #")]"
 0 0 25 29 1 #"\n"
 0 0 25 3 6 #"    [("
@@ -7242,6 +7242,90 @@
 0 0 25 29 1 #"\n"
 0 0 25 3 3 #"  )"
 0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  ("
+0 0 15 3 4 #"cond"
+0 0 25 3 1 #" "
+0 0 17 3 30 #"; Pacman atrap\303\263 a un fantasma"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"    [("
+0 0 14 3 3 #"and"
+0 0 25 3 2 #" ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"vulnerable-ghosts"
+0 0 25 3 1 #" "
+0 0 22 3 2 #"#t"
+0 0 25 3 3 #") ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"pacman-pos"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"ghost1-pos"
+0 0 25 3 4 #")) ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 11 #"score-value"
+0 0 25 3 2 #" ("
+0 0 14 3 1 #"+"
+0 0 25 3 1 #" "
+0 0 14 3 11 #"score-value"
+0 0 25 3 1 #" "
+0 0 22 3 3 #"100"
+0 0 25 3 4 #")) ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 3 1 #" "
+0 0 22 3 1 #"0"
+0 0 25 3 3 #") ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"ghost1-pos"
+0 0 25 3 1 #" "
+0 0 14 3 16 #"ghost1-pos-start"
+0 0 25 3 2 #")]"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"    [("
+0 0 14 3 3 #"and"
+0 0 25 3 2 #" ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"vulnerable-ghosts"
+0 0 25 3 1 #" "
+0 0 22 3 2 #"#t"
+0 0 25 3 3 #") ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"pacman-pos"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"ghost2-pos"
+0 0 25 3 4 #")) ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 11 #"score-value"
+0 0 25 3 2 #" ("
+0 0 14 3 1 #"+"
+0 0 25 3 1 #" "
+0 0 14 3 11 #"score-value"
+0 0 25 3 1 #" "
+0 0 22 3 3 #"100"
+0 0 25 3 4 #")) ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost2-count"
+0 0 25 3 1 #" "
+0 0 22 3 1 #"0"
+0 0 25 3 3 #") ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"ghost1-pos"
+0 0 25 3 1 #" "
+0 0 14 3 16 #"ghost2-pos-start"
+0 0 25 3 2 #")]"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  )"
+0 0 25 29 1 #"\n"
 0 0 17 3 32 #";-------------------------------"
 0 0 25 29 1 #"\n"
 0 0 17 3 17 #";Jugada fantasma1"
@@ -7256,17 +7340,36 @@
 0 0 25 29 1 #"\n"
 0 0 25 3 3 #"  )"
 0 0 25 29 1 #"\n"
-0 0 25 3 2 #"  "
 0 0 25 29 1 #"\n"
 0 0 25 3 3 #"  ("
 0 0 15 3 4 #"cond"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"    [("
+0 0 14 3 1 #"<"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 3 1 #" "
+0 0 14 3 15 #"max-stop-ghosts"
+0 0 25 3 3 #") ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 7 #"new-dir"
+0 0 25 3 1 #" "
+0 0 19 3 7 #"\"right\""
+0 0 25 3 2 #")]"
+0 0 25 29 1 #"\n"
+0 0 25 3 5 #"    ["
+0 0 14 3 4 #"else"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"     ("
+0 0 15 3 4 #"cond"
 0 0 25 3 1 #" "
 0 0 17 3 79
-(113
+(114
  #"; Cambiar posici\303\263n del fantasma dependiendo de si est\303\241"
  #" persiguiendo o huyendo"
 ) 0 0 25 29 1 #"\n"
-0 0 25 3 6 #"    [("
+0 0 25 3 9 #"       [("
 0 0 14 3 3 #"and"
 0 0 25 3 2 #" ("
 0 0 14 3 6 #"equal?"
@@ -7294,7 +7397,7 @@
 0 0 17 3 62
 #"; Se mueve lejos del objetivo lentamente (la mitad de r\303\241pido)"
 0 0 25 29 1 #"\n"
-0 0 25 3 6 #"     ("
+0 0 25 3 9 #"        ("
 0 0 14 3 4 #"set!"
 0 0 25 3 1 #" "
 0 0 14 3 7 #"new-dir"
@@ -7306,11 +7409,12 @@
 0 0 14 3 10 #"pacman-pos"
 0 0 25 3 1 #" "
 0 0 19 3 1 #"\""
-0 0 19 3 9 #"run away\""
+0 0 19 3 3 #"run"
+0 0 19 3 6 #" away\""
 0 0 25 3 3 #")) "
 0 0 17 3 50 #"; Obtiene nueva direcci\303\263n para alejarse de pacman"
 0 0 25 29 1 #"\n"
-0 0 25 3 6 #"     ("
+0 0 25 3 9 #"        ("
 0 0 14 3 10 #"change-pos"
 0 0 25 3 1 #" "
 0 0 14 3 10 #"ghost1-pos"
@@ -7323,9 +7427,9 @@
 0 0 25 3 2 #") "
 0 0 17 3 21 #"; Actualiza posici\303\263n"
 0 0 25 29 1 #"\n"
-0 0 25 3 5 #"    ]"
+0 0 25 3 8 #"       ]"
 0 0 25 29 1 #"\n"
-0 0 25 3 6 #"    [("
+0 0 25 3 9 #"       [("
 0 0 14 3 6 #"equal?"
 0 0 25 3 1 #" "
 0 0 14 3 17 #"vulnerable-ghosts"
@@ -7334,7 +7438,7 @@
 0 0 25 3 2 #") "
 0 0 17 3 47 #"; Se mueve a velocidad normal hacia el objetivo"
 0 0 25 29 1 #"\n"
-0 0 25 3 6 #"     ("
+0 0 25 3 9 #"        ("
 0 0 14 3 4 #"set!"
 0 0 25 3 1 #" "
 0 0 14 3 7 #"new-dir"
@@ -7349,7 +7453,7 @@
 0 0 25 3 3 #")) "
 0 0 17 3 50 #"; Obtiene nueva direcci\303\263n para acercarse a pacman"
 0 0 25 29 1 #"\n"
-0 0 25 3 6 #"     ("
+0 0 25 3 9 #"        ("
 0 0 14 3 10 #"change-pos"
 0 0 25 3 1 #" "
 0 0 14 3 10 #"ghost1-pos"
@@ -7361,6 +7465,10 @@
 0 0 14 3 7 #"new-dir"
 0 0 25 3 2 #") "
 0 0 17 3 21 #"; Actualiza posici\303\263n"
+0 0 25 29 1 #"\n"
+0 0 25 3 8 #"       ]"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"     )"
 0 0 25 29 1 #"\n"
 0 0 25 3 5 #"    ]"
 0 0 25 29 1 #"\n"
@@ -7451,6 +7559,86 @@
 0 0 25 29 1 #"\n"
 0 0 25 3 3 #"  )"
 0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 3 2 #" ("
+0 0 14 3 1 #"+"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 3 1 #" "
+0 0 22 3 1 #"1"
+0 0 25 3 2 #"))"
+0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 17 3 32 #";..............................."
+0 0 25 29 1 #"\n"
+0 0 17 3 28 #"; Fantasmas atrapan a pacman"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  ("
+0 0 15 3 4 #"cond"
+0 0 25 3 1 #" "
+0 0 17 3 32 #"; Los fantasmas atrapan a pacman"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"    [("
+0 0 14 3 3 #"and"
+0 0 25 3 2 #" ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"vulnerable-ghosts"
+0 0 25 3 1 #" "
+0 0 22 3 2 #"#f"
+0 0 25 3 3 #") ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"pacman-pos"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"ghost1-pos"
+0 0 25 3 4 #")) ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 13 #"pacman-alive?"
+0 0 25 3 1 #" "
+0 0 22 3 2 #"#f"
+0 0 25 3 3 #") ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 3 1 #" "
+0 0 22 3 1 #"0"
+0 0 25 3 2 #")]"
+0 0 25 29 1 #"\n"
+0 0 25 3 6 #"    [("
+0 0 14 3 3 #"and"
+0 0 25 3 2 #" ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"vulnerable-ghosts"
+0 0 25 3 1 #" "
+0 0 22 3 2 #"#f"
+0 0 25 3 3 #") ("
+0 0 14 3 6 #"equal?"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"pacman-pos"
+0 0 25 3 1 #" "
+0 0 14 3 10 #"ghost2-pos"
+0 0 25 3 4 #")) ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 13 #"pacman-alive?"
+0 0 25 3 1 #" "
+0 0 22 3 2 #"#f"
+0 0 25 3 3 #") ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost2-count"
+0 0 25 3 1 #" "
+0 0 22 3 1 #"0"
+0 0 25 3 2 #")]"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  )"
 0 0 25 29 1 #"\n"
 0 0 17 3 32 #";..............................."
 0 0 25 29 1 #"\n"
@@ -7803,7 +7991,7 @@
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 67
-(114
+(115
  #"; Funci\303\263n que actualiza el valor del score asign\303\241ndole"
  #" un entero."
 ) 0 0 25 29 1 #"\n"
@@ -7826,7 +8014,9 @@
 0 0 25 3 2 #" ("
 0 0 14 3 13 #"string-append"
 0 0 25 3 1 #" "
-0 0 19 3 9 #"\"Score: \""
+0 0 19 3 1 #"\""
+0 0 19 3 7 #"Score: "
+0 0 19 3 1 #"\""
 0 0 25 3 2 #" ("
 0 0 14 3 14 #"number->string"
 0 0 25 3 1 #" "
@@ -7834,12 +8024,13 @@
 0 0 25 3 3 #")) "
 0 0 22 3 2 #"40"
 0 0 25 3 1 #" "
-0 0 19 3 10 #"\"Lavender\""
+0 0 19 3 9 #"\"Lavender"
+0 0 19 3 1 #"\""
 0 0 25 3 3 #")))"
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 17 3 92
-(115
+(116
  #"; Funci\303\263n que actualiza el texto del mensaje de la escena, mo"
  #"dificando tambi\303\251n su tama\303\261o."
 ) 0 0 25 29 1 #"\n"
@@ -7879,7 +8070,7 @@
 0 0 17 3 99 5 0 0 25 29 1 #"\n"
 0 0 17 3 99 4 0 0 25 29 1 #"\n"
 0 0 17 3 125
-(116
+(117
  #"; Funci\303\263n que se encarga de ejecutar el juego. Comienza por e"
  #"l nivel 1, y si pacman lo gana, prosigue con el siguiente nivel"
 ) 0 0 25 29 1 #"\n"
@@ -7894,7 +8085,8 @@
 0 0 25 3 2 #" ("
 0 0 14 3 13 #"string-append"
 0 0 25 3 1 #" "
-0 0 19 3 15 #"\"./mazes/level\""
+0 0 19 3 14 #"\"./mazes/level"
+0 0 19 3 1 #"\""
 0 0 25 3 2 #" ("
 0 0 14 3 14 #"number->string"
 0 0 25 3 1 #" "
@@ -7912,7 +8104,9 @@
 0 0 25 3 2 #" ("
 0 0 14 3 13 #"string-append"
 0 0 25 3 1 #" "
-0 0 19 3 8 #"\"Level \""
+0 0 19 3 1 #"\""
+0 0 19 3 6 #"Level "
+0 0 19 3 1 #"\""
 0 0 25 3 2 #" ("
 0 0 14 3 14 #"number->string"
 0 0 25 3 1 #" "
@@ -7920,7 +8114,8 @@
 0 0 25 3 3 #")) "
 0 0 22 3 2 #"40"
 0 0 25 3 1 #" "
-0 0 19 3 10 #"\"Lavender\""
+0 0 19 3 1 #"\""
+0 0 19 3 9 #"Lavender\""
 0 0 25 3 2 #") "
 0 0 17 3 29 #"; Actualizar mensaje de nivel"
 0 0 25 29 1 #"\n"
@@ -8106,6 +8301,25 @@
 0 0 25 3 1 #" "
 0 0 14 3 10 #"ghost2-pos"
 0 0 25 3 1 #")"
+0 0 25 29 1 #"\n"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost1-count"
+0 0 25 3 1 #" "
+0 0 14 3 15 #"max-stop-ghosts"
+0 0 25 3 2 #") "
+0 0 17 3 44 #"; El fantasma1 no espera al inicio del nivel"
+0 0 25 29 1 #"\n"
+0 0 25 3 3 #"  ("
+0 0 14 3 4 #"set!"
+0 0 25 3 1 #" "
+0 0 14 3 17 #"stop-ghost2-count"
+0 0 25 3 1 #" "
+0 0 22 3 1 #"0"
+0 0 25 3 2 #") "
+0 0 17 3 41 #"; El fantasma2 espera al inicio del nivel"
 0 0 25 29 1 #"\n"
 0 0 25 29 1 #"\n"
 0 0 25 3 3 #"  ("
